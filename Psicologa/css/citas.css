@@ -674,6 +674,19 @@ body {
     text-align: left;
 }
 
+.v24_811 {
+    width: 68px;
+    color: rgba(157, 157, 157, 1);
+    position: absolute;
+    top: 8px;
+    left: 830px;
+    font-family: Gill Sans MT;
+    font-weight: Regular;
+    font-size: 32px;
+    opacity: 1;
+    text-align: left;
+}
+
 .v24_82 {
     width: 61px;
     color: rgba(157, 157, 157, 1);
@@ -687,12 +700,55 @@ body {
     text-align: left;
 }
 
+.v24_822 {
+    width: 85px;
+    height: 35px;
+    color: rgb(18, 18, 214);
+    position: absolute;
+    border-radius: 25px;
+    top: 100px;
+    left: 812px;
+    font-weight: Regular;
+    font-family: Gill Sans MT;
+    font-size: 24px;
+    opacity: 1;
+    text-align: center;
+}
+
+.v24_8222 {
+    width: 85px;
+    height: 35px;
+    color: rgb(18, 18, 214);
+    position: absolute;
+    border-radius: 25px;
+    top: 100px;
+    left: 1012px;
+    font-weight: Regular;
+    font-family: Gill Sans MT;
+    font-size: 24px;
+    opacity: 1;
+    text-align: center;
+}
+
 .v24_83 {
     width: 146px;
     color: rgba(9, 9, 9, 1);
     position: absolute;
     top: 41px;
     left: 605px;
+    font-family: Gill Sans MT;
+    font-weight: Regular;
+    font-size: 32px;
+    opacity: 1;
+    text-align: left;
+}
+
+.v24_833 {
+    width: 200px;
+    color: rgba(9, 9, 9, 1);
+    position: absolute;
+    top: 41px;
+    left: 575px;
     font-family: Gill Sans MT;
     font-weight: Regular;
     font-size: 32px;
@@ -709,6 +765,19 @@ body {
     font-family: Gill Sans MT;
     font-weight: Regular;
     font-size: 32px;
+    opacity: 1;
+    text-align: left;
+}
+
+.v24_844 {
+    width: 160px;
+    color: rgba(9, 9, 9, 1);
+    position: absolute;
+    top: 41px;
+    left: 796px;
+    font-family: Gill Sans MT;
+    font-weight: Regular;
+    font-size: 26px;
     opacity: 1;
     text-align: left;
 }
@@ -731,6 +800,30 @@ body {
     color: rgba(0, 0, 0, 1);
     position: absolute;
     top: 73px;
+    left: 173px;
+    font-family: Gill Sans MT;
+    font-weight: Regular;
+    font-size: 32px;
+    opacity: 1;
+    text-align: left;
+}
+
+.v24_86 {
+    width: 359px;
+    color: rgba(0, 0, 0, 1);
+    top: 83px;
+    left: 173px;
+    font-family: Gill Sans MT;
+    font-weight: Regular;
+    font-size: 32px;
+    opacity: 1;
+    text-align: left;
+}
+
+#v24_886 {
+    width: 359px;
+    color: rgba(0, 0, 0, 1);
+    top: 83px;
     left: 173px;
     font-family: Gill Sans MT;
     font-weight: Regular;
