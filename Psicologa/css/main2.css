@@ -144,6 +144,19 @@ body {
     left: 0px;
 }
 
+.v3_12 {
+    width: 130px;
+    color: rgba(255, 255, 255, 1);
+    position: absolute;
+    top: 39px;
+    left: 800px;
+    font-family: Gill Sans MT;
+    font-weight: Regular;
+    font-size: 36px;
+    opacity: 1;
+    text-align: left;
+}
+
 .v3_16 {
     width: 527px;
     height: 57px;

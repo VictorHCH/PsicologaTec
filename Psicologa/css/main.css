@@ -85,7 +85,7 @@ body {
     opacity: 1;
     position: absolute;
     top: 10px;
-    left: 800px;
+    left: 575px;
     overflow: hidden;
 }
 
@@ -487,6 +487,19 @@ body {
     top: 481px;
     left: 8px;
     overflow: hidden;
+}
+
+.v3_12 {
+    width: 130px;
+    color: rgba(255, 255, 255, 1);
+    position: absolute;
+    top: 39px;
+    left: 800px;
+    font-family: Gill Sans MT;
+    font-weight: Regular;
+    font-size: 36px;
+    opacity: 1;
+    text-align: left;
 }
 
 .v6_34 {
