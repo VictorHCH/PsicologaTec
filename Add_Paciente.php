@@ -88,7 +88,7 @@
         <div class="container align-items-center ">
             <br>
             <div class="col-md-20">
-                <form action="Add_Cita.html">
+                <form action="agregaPaciente.php" method="post">
                     <div class="card mb-3">
                         <div class="card-body">
                             <div class="row">
@@ -96,7 +96,7 @@
                                     <h6 class="mb-0">Numero de control</h6>
                                 </div>
                                 <div class="col-sm-9 text-secondary">
-                                    <input type="text" class="form-control" placeholder="Numero de control" aria-label="Numero de control" aria-describedby="basic-addon2">
+                                    <input type="text" class="form-control" name="control" placeholder="Numero de control" aria-label="Numero de control" aria-describedby="basic-addon2">
                                 </div>
                             </div>
                             <hr>
@@ -105,7 +105,7 @@
                                     <h6 class="mb-0">Fecha de Ingreso</h6>
                                 </div>
                                 <div class="col-sm-9 text-secondary">
-                                    <input type="date" class="form-control" placeholder="Fecha" aria-label="Fecha" aria-describedby="basic-addon2">
+                                    <input type="date" class="form-control" name="fecha" placeholder="Fecha" aria-label="Fecha" aria-describedby="basic-addon2">
                                 </div>
                             </div>
                             <hr>
@@ -114,7 +114,7 @@
                                     <h6 class="mb-0">Nombre(s)</h6>
                                 </div>
                                 <div class="col-sm-9 text-secondary">
-                                    <input type="text" class="form-control" placeholder="Nombre(s)" aria-label="Nombre(s)" aria-describedby="basic-addon2">
+                                    <input type="text" class="form-control" name="nombre" placeholder="Nombre(s)" aria-label="Nombre(s)" aria-describedby="basic-addon2">
                                 </div>
                             </div>
                             <hr>
@@ -123,7 +123,7 @@
                                     <h6 class="mb-0">Apellidos</h6>
                                 </div>
                                 <div class="col-sm-9 text-secondary">
-                                    <input type="text" class="form-control" placeholder="Apellidos" aria-label="Apellidos" aria-describedby="basic-addon2">
+                                    <input type="text" class="form-control" name="apellido" placeholder="Apellidos" aria-label="Apellidos" aria-describedby="basic-addon2">
                                 </div>
                             </div>
                             <hr>
@@ -132,7 +132,7 @@
                                     <h6 class="mb-0">CURP</h6>
                                 </div>
                                 <div class="col-sm-9 text-secondary">
-                                    <input type="text" class="form-control" placeholder="CURP" aria-label="CURP" aria-describedby="basic-addon2" maxlength="18">
+                                    <input type="text" class="form-control" name="curp" placeholder="CURP" aria-label="CURP" aria-describedby="basic-addon2" maxlength="18">
                                 </div>
                             </div>
                             <hr>
@@ -141,7 +141,7 @@
                                     <h6 class="mb-0">Peso</h6>
                                 </div>
                                 <div class="col-sm-9 text-secondary">
-                                    <input type="number" class="form-control" placeholder="Peso" aria-label="Peso" aria-describedby="basic-addon2" maxlength="18">
+                                    <input type="number" class="form-control" name="peso" placeholder="Peso" aria-label="Peso" aria-describedby="basic-addon2" maxlength="18">
                                 </div>
                             </div>
                             <hr>
@@ -150,7 +150,7 @@
                                     <h6 class="mb-0">Estatura</h6>
                                 </div>
                                 <div class="col-sm-9 text-secondary">
-                                    <input type="number" class="form-control" placeholder="Estatura" aria-label="Estatura   " aria-describedby="basic-addon2" maxlength="18">
+                                    <input type="number" class="form-control" name="estatura" placeholder="Estatura" aria-label="Estatura   " aria-describedby="basic-addon2" maxlength="18">
                                 </div>
                             </div>
                             <hr>
@@ -160,7 +160,7 @@
                                 </div>
                                 <div class="col-sm-9 text-secondary">
                                     <div class="col-sm-9 ">
-                                        <select class="mdb-select md-form text-secondary" style="border-radius:25px ;">
+                                        <select class="mdb-select md-form text-secondary" style="border-radius:25px ;" name="sangre">
                                           <option value="" disabled selected>Tipo de sangre</option>
                                           <option value="1">A+</option>
                                           <option value="2">A-</option>
@@ -183,11 +183,11 @@
                                 </div>
                                 <div class="col-sm-9 text-secondary">
                                     <div class="col-sm-9 ">
-                                        <select class="mdb-select md-form text-secondary" style="border-radius:25px ;">
+                                        <select class="mdb-select md-form text-secondary" style="border-radius:25px ;" name="sexo">
                                           <option value="" disabled selected>Sexo</option>
                                           <option value="1">Hombre</option>
                                           <option value="2">Mujer</option>
-                                         
+
                                         </select>
 
                                     </div>
@@ -199,13 +199,13 @@
                                     <h6 class="mb-0 ">Edad</h6>
                                 </div>
                                 <div class="col-sm-9 text-secondary ">
-                                    <input type="number " class="form-control " placeholder="Edad " aria-label="Edad " aria-describedby="basic-addon2 " maxlength="18 ">
+                                    <input type="number " class="form-control " name="edad" placeholder="Edad " aria-label="Edad " aria-describedby="basic-addon2 " maxlength="18 ">
                                 </div>
                             </div>
                             <hr>
                             <div class="row ">
                                 <div class="col-sm-12 ">
-                                    <input class="btn btn-sm btn-primary w-100 ml-2 " style="background-color:#346e63;border:#f4f4f4; " target="__blank " value="Agregar " type="submit ">
+                                    <button class="btn btn-sm btn-primary w-100 ml-2 " style="background-color:#346e63;border:#f4f4f4; " type="submit ">Agregar</button>
                                 </div>
                             </div>
                         </div>

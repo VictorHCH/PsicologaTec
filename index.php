@@ -1,3 +1,4 @@
+<?php require('includes/valida.php') ?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -64,12 +65,12 @@
             </a>
             <nav id="navbar" class="navbar">
                 <ul>
-                    <li><a href="index.html">Citas pendientes</a></li>
+                    <li><a href="index.php">Citas pendientes</a></li>
 
-                    <li><a href="pacientes.html">Pacientes</a></li>
-                    <li><a href="Add_Paciente.html">Agregar paciente</a></li>
-                    <li><a href="Add_Cita.html">Agendar cita</a></li>
-                    <li><a href="#contact">Cerrar Sesion</a></li>
+                    <li><a href="pacientes.php">Pacientes</a></li>
+                    <li><a href="Add_Paciente.php">Agregar paciente</a></li>
+                    <li><a href="Add_Cita.php">Agendar cita</a></li>
+                    <li><a href="logoff.php">Cerrar Sesion</a></li>
                 </ul>
             </nav>
 

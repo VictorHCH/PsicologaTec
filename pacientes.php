@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -57,20 +58,20 @@
     <header id="header" class="header d-flex align-items-center">
 
         <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
-            <a href="index.html" class="logo d-flex align-items-center">
+            <a href="index.php" class="logo d-flex align-items-center">
                 <!-- Uncomment the line below if you also wish to use an image logo -->
                 <!-- <img src="assets/img/logo.png" alt=""> -->
                 <h1>Pacientes<span>.</span></h1>
             </a>
             <nav id="navbar" class="navbar">
                 <ul>
-                    <li><a href="pacientes.html">Generar reporte</a></li>
-                    <li><a href="index.html">Citas pendientes</a></li>
+                    <li><a href="pacientes.php">Generar reporte</a></li>
+                    <li><a href="index.php">Citas pendientes</a></li>
 
-                    <li><a href="pacientes.html">Pacientes</a></li>
-                    <li><a href="Add_Paciente.html">Agregar paciente</a></li>
-                    <li><a href="Add_Cita.html">Agendar cita</a></li>
-                    <li><a href="#contact">Cerrar Sesion</a></li>
+                    <li><a href="pacientes.php">Pacientes</a></li>
+                    <li><a href="Add_Paciente.php">Agregar paciente</a></li>
+                    <li><a href="Add_Cita.php">Agendar cita</a></li>
+                    <li><a href="logoff.php">Cerrar Sesion</a></li>
                 </ul>
             </nav>
             <!-- .navbar -->
@@ -88,31 +89,55 @@
         <div class="container">
             <div class="container">
                 <!--  -->
-                <div class="card p-3 " style="background-color:#18bc9c">
-                    <div class="ml-3 w-70 ">
-                        <h4 class="mb-0 mt-0 " style="color:#ffffff">
-                            <span>Kenneth </span><span> Dominguez</span></h4>
-                        <span style="color:#ffffff">19410250</span>
-                        <div class="p-2 mt-2 d-flex justify-content-between rounded text-white stats " style="background-color:#ffffff">
-                            <div class=" d-flex flex-column " style="color:#000000"> <span class="articles ">Peso</span> <span class="number1 ">38 kg.</span> </div>
-                            <div class="d-flex flex-column " style="color:#000000"> <span class="followers ">Estatura</span> <span class="number2 ">180 cm.</span> </div>
-                            <div class="d-flex flex-column " style="color:#000000"> <span class="rating ">Edad</span> <span class="number3 ">25</span> </div>
-                        </div>
-                        <form action="perfil.html">
-                            <div class="button mt-2 d-flex flex-row align-items-center ">
-                                <button class="btn btn-sm btn-primary w-100 ml-2 " style="background-color:#116554;border:#f4f4f4; " type="submit">Entrar</button>
-                                <!-- En este boton quien que al picarle entre a al perfil de la persona correspondiente , similar que al boron de paciente -->
+                    <?php
+                        //Se hace la conexion con la BD
+                        include("conexion.php");
+                        //Validacion de usuario y contraseña
 
+                        $consulta = "SELECT nombres, apellidos, noControl, peso, estatura_cm, edad FROM pacientes";
+                        $query = mysqli_query($conexion, $consulta);
+                        $resultado = mysqli_num_rows($query);
+                        //Si se encontro el usuario entra al index
+                        if($resultado){ 
+                            while($data = mysqli_fetch_array($query)){
+                                $nombre = $data['nombres'];
+                                $apellido = $data['apellidos'];
+                                $control= $data['noControl'];
+                                $peso = $data['peso'];
+                                $estatura = $data['estatura_cm'];
+                                $edad = $data['edad'];
+                            ?>
+                            <div class="card p-3 " style="background-color:#18bc9c">
+                                <div class="ml-3 w-70 ">
+                                    <h4 class="mb-0 mt-0 " style="color:#ffffff">
+                                        <span><?php echo $nombre; ?></span>&nbsp<span><?php echo $apellido; ?></span></h4>
+                                    <span style="color:#ffffff"><?php echo $control; ?></span>
+                                    <div class="p-2 mt-2 d-flex justify-content-between rounded text-white stats " style="background-color:#ffffff">
+                                        <div class=" d-flex flex-column " style="color:#000000"> <span class="articles ">Peso</span> <span class="number1 "><?php echo $peso; ?>kg.</span> </div>
+                                        <div class="d-flex flex-column " style="color:#000000"> <span class="followers ">Estatura</span> <span class="number2 "><?php echo $estatura; ?>cm.</span> </div>
+                                        <div class="d-flex flex-column " style="color:#000000"> <span class="rating ">Edad</span> <span class="number3 "><?php echo $edad; ?> años</span> </div>
+                                    </div>
+                                    <a href="perfil.php?id=<?php echo $control ?>">
+                                        <div class="button mt-2 d-flex flex-row align-items-center ">
+                                            <button class="btn btn-sm btn-primary w-100 ml-2 " style="background-color:#116554;border:#f4f4f4; " type="submit">Entrar</button>
+                                            <!-- En este boton quien que al picarle entre a al perfil de la persona correspondiente , similar que al boron de paciente -->
+                                        </div>
+                                    <a>
+                                </div>
                             </div>
-                        </form>
-                    </div>
-                </div>
+                            <div>
+                                <p>&nbsp</p>
+                            </div>
+                            <?php
+                            }
+                        }
+                    ?>    
 
                 <br>
                 <!--  -->
             </div>
             <div class="container">
-                <form action="Add_Paciente.html"><button class="btn btn-sm btn-primary w-100 h-100 p-3 mt-2" style="background-color:#116554;border:#f4f4f4;" type="sumbit">Agregar Paciente</button>
+                <form action="Add_Paciente.php"><button class="btn btn-sm btn-primary w-100 h-100 p-3 mt-2" style="background-color:#116554;border:#f4f4f4;" type="sumbit">Agregar Paciente</button>
                     <br><br></form>
 
 
@@ -128,7 +153,7 @@
         <div class="container">
             <div class="row gy-4">
                 <div class="col-lg-5 col-md-12 footer-info">
-                    <a href="index.html" class="logo d-flex align-items-center">
+                    <a href="index.php" class="logo d-flex align-items-center">
                         <span>Pacientes</span>
                     </a>
                     <p>Cras fermentum odio eu feugiat lide par naso tierra. Justo eget nada terra videa magna derita valies darta donna mare fermentum iaculis eu non diam phasellus.</p>

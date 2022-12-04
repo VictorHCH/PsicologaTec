@@ -1,3 +1,42 @@
+<?php
+    $control = filter_input(1, 'id');
+    //Se hace la conexion con la BD
+    include("conexion.php");
+    //Validacion de usuario y contraseña
+
+    $consulta = "SELECT * FROM pacientes WHERE noControl='$control'";
+    $query = mysqli_query($conexion, $consulta);
+    $resultado = mysqli_num_rows($query);
+    //Si se encontro el usuario entra al index
+    if($resultado){ 
+        while($data = mysqli_fetch_array($query)){
+            $nombre = $data['nombres'];
+            $apellido = $data['apellidos'];
+            $peso = $data['peso'];
+            $estatura = $data['estatura_cm'];
+            $edad = $data['edad'];
+            $fecha = date("d/m/Y", strtotime($data['fecha_ingreso']));
+            $curp = $data['curp'];
+            $sangre = $data['sangre'];
+            $sexo = $data['sexo'];
+            if($sexo == 1){
+                $sexo = "H";
+            }
+            else{
+                $sexo = "M";
+            }
+        }
+    }
+    $consulta = "SELECT tipo FROM sangre WHERE id_sangre='$sangre'";
+    $query = mysqli_query($conexion, $consulta);
+    $resultado = mysqli_num_rows($query);
+    //Si se encontro el usuario entra al index
+    if($resultado){ 
+        while($data = mysqli_fetch_array($query)){
+            $sangre = $data['tipo'];
+        }
+    }
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -104,14 +143,10 @@
                                     <div class="mt-3">
 
                                         <h4>
-                                            <span>Victor Hugo </span><span>Covarrubias Hernandez</span>
+                                            <span><?php echo $nombre ?></span>&nbsp<span><?php echo $apellido ?></span>
                                         </h4>
-
-
-
                                         <p class="text-secondary mb-1"><b>Numero de control</b></p>
-                                        <p class="text-muted font-size-sm">19410288</p>
-
+                                        <p class="text-muted font-size-sm"><?php echo $control ?></p>
                                     </div>
                                 </div>
                             </div>
@@ -120,26 +155,26 @@
                             <ul class="list-group list-group-flush">
                                 <li class="list-group-item d-flex justify-content-between align-items-center flex-wrap">
                                     <h6 class="mb-0">CURP</h6>
-                                    <span class="text-secondary">aaaaaaaaaaaaaaaaaa</span>
+                                    <span class="text-secondary"><?php echo $curp ?></span>
                                 </li>
                                 <li class="list-group-item d-flex justify-content-between align-items-center flex-wrap">
                                     <h6 class="mb-0">Peso</h6>
-                                    <span class="text-secondary">60 kg.</span></li>
+                                    <span class="text-secondary"><?php echo $peso ?> kg.</span></li>
                                 <li class="list-group-item d-flex justify-content-between align-items-center flex-wrap">
                                     <h6 class="mb-0">Estatura</h6>
-                                    <span class="text-secondary">180 cm.</span> </li>
+                                    <span class="text-secondary"><?php echo $estatura ?> cm.</span> </li>
                                 <li class="list-group-item d-flex justify-content-between align-items-center flex-wrap">
                                     <h6 class="mb-0">Fecha de Ingreso</h6>
-                                    <span class="text-secondary">24/10/2022</span></li>
+                                    <span class="text-secondary"><?php echo $fecha ?></span></li>
                                 <li class="list-group-item d-flex justify-content-between align-items-center flex-wrap">
                                     <h6 class="mb-0">Tipo de sangre</h6>
-                                    <span class="text-secondary">AB+</span></li>
+                                    <span class="text-secondary"><?php echo $sangre ?></span></li>
                                 <li class="list-group-item d-flex justify-content-between align-items-center flex-wrap">
                                     <h6 class="mb-0">Sexo</h6>
-                                    <span class="text-secondary">H</span></li>
+                                    <span class="text-secondary"><?php echo $sexo ?></span></li>
                                 <li class="list-group-item d-flex justify-content-between align-items-center flex-wrap">
                                     <h6 class="mb-0">Edad</h6>
-                                    <span class="text-secondary">21</span></li>
+                                    <span class="text-secondary"><?php echo $edad ?></span></li>
                             </ul>
                         </div>
                         <div class="card mt-3 justify-content-center">

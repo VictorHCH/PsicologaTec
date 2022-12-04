@@ -43,7 +43,7 @@
                     <!--Aqui va el inicio para entrar-->
 
 
-                    <form action="bckLogin.php" method="POST">
+                    <form action="logon.php" method="POST">
                         <h2 class="formas__title">Ingresar</h2>
                         <input class="formas" type="text" minlength="3" name="usuario" placeholder="Usuario"><br>
                         <input class="formas" type="password" minlength="8" name="pass" placeholder="Contraseña"><br>
