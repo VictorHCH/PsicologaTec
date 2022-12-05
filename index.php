@@ -42,23 +42,14 @@
 
     <!-- ======= Header ======= -->
     <section id="topbar" class="topbar d-flex align-items-center">
-        <div class="container d-flex justify-content-center justify-content-md-between">
-            <div class="contact-info d-flex align-items-center">
-
-            </div>
-            <div class="social-links d-none d-md-flex align-items-center">
-
-                <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
-
-            </div>
-        </div>
+        
     </section>
     <!-- End Top Bar -->
 
     <header id="header" class="header d-flex align-items-center">
 
         <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
-            <a href="index.html" class="logo d-flex align-items-center">
+            <a href="index.php" class="logo d-flex align-items-center">
                 <!-- Uncomment the line below if you also wish to use an image logo -->
                 <!-- <img src="assets/img/logo.png" alt=""> -->
                 <h1>Psiconsultorio<span>.</span></h1>
@@ -106,7 +97,7 @@
                     <div class="col-xl-3 col-md-6" data-aos="fade-up" data-aos-delay="100">
                         <div class="icon-box">
                             <div class="icon"><i class="bi bi-easel"></i></div>
-                            <h4 class="title"><a href="" class="stretched-link">Citas pendientes</a></h4>
+                            <h4 class="title"><a href="index.php" class="stretched-link">Citas pendientes</a></h4>
                         </div>
                     </div>
                     <!--End Icon Box -->
@@ -114,7 +105,7 @@
                     <div class="col-xl-3 col-md-6" data-aos="fade-up" data-aos-delay="200">
                         <div class="icon-box">
                             <div class="icon"><i class="bi bi-gem"></i></div>
-                            <h4 class="title"><a href="" class="stretched-link">Pacientes</a></h4>
+                            <h4 class="title"><a href="pacientes.php" class="stretched-link">Pacientes</a></h4>
                         </div>
                     </div>
                     <!--End Icon Box -->
@@ -122,7 +113,7 @@
                     <div class="col-xl-3 col-md-6" data-aos="fade-up" data-aos-delay="300">
                         <div class="icon-box">
                             <div class="icon"><i class="bi bi-geo-alt"></i></div>
-                            <h4 class="title"><a href="" class="stretched-link">Agregar Citas</a></h4>
+                            <h4 class="title"><a href="Add_Cita.php" class="stretched-link">Agregar Citas</a></h4>
                         </div>
                     </div>
                     <!--End Icon Box -->
@@ -131,7 +122,7 @@
                         <div class="icon-box">
                             <div class="icon"><i class="bi bi-command"></i></div>
                             <h4 class="title">
-                                <a href="" class="stretched-link">Agregar pacientes</a>
+                                <a href="Add_Paciente.php" class="stretched-link">Agregar pacientes</a>
                             </h4>
                         </div>
                     </div>
@@ -159,7 +150,7 @@
                         <div class="d-flex flex-column " style="color:#000000 "> <span class="followers "><b>Hora:</b></span> <span class="number2 ">9:30</span> </div>
                         <div class="d-flex flex-column " style="color:#000000 "> <span class="rating "><b>Numero de control:</b></span> <span class="number3 ">19410251</span> </div>
                     </div>
-                    <form action="perfil.html">
+                    <form action="perfil.php">
                         <div class="button mt-2 d-flex flex-row align-items-center ">
                             <button class="btn btn-sm btn-primary w-100 ml-2 " style="background-color:#116554;border:#f4f4f4; " type="submit">Entrar</button>
                             <!-- En este boton quien que al picarle entre a al perfil de la persona correspondiente , similar que al boron de paciente -->
@@ -172,7 +163,7 @@
             <!--  -->
         </div>
         <div class="container ">
-            <form action="Add_Cita.html">
+            <form action="Add_Cita.php">
                 <button class="btn btn-sm btn-primary w-100 h-100 p-3 mt-2 " style="background-color:#116554;border:#f4f4f4; " type="submit ">Nueva Cita</button>
                 <br><br>
             </form>
@@ -190,63 +181,32 @@
         <div class="container ">
             <div class="row gy-4 ">
                 <div class="col-lg-5 col-md-12 footer-info ">
-                    <a href="index.html " class="logo d-flex align-items-center ">
-                        <span>Impact</span>
+                    <a href="index.php " class="logo d-flex align-items-center ">
+                        <span>Citas pendientes</span>
                     </a>
-                    <p>Cras fermentum odio eu feugiat lide par naso tierra. Justo eget nada terra videa magna derita valies darta donna mare fermentum iaculis eu non diam phasellus.</p>
+                
                     <div class="social-links d-flex mt-4 ">
-                        <a href="# " class="twitter "><i class="bi bi-twitter "></i></a>
-                        <a href="# " class="facebook "><i class="bi bi-facebook "></i></a>
-                        <a href="# " class="instagram "><i class="bi bi-instagram "></i></a>
-                        <a href="# " class="linkedin "><i class="bi bi-linkedin "></i></a>
+                        
+                        <a href="https://www.facebook.com/ITParraloficial" class="facebook "><i class="bi bi-facebook "></i></a>
+                        
                     </div>
                 </div>
 
-                <div class="col-lg-2 col-6 footer-links ">
-                    <h4>Useful Links</h4>
-                    <ul>
-                        <li><a href="# ">Home</a></li>
-                        <li><a href="# ">About us</a></li>
-                        <li><a href="# ">Services</a></li>
-                        <li><a href="# ">Terms of service</a></li>
-                        <li><a href="# ">Privacy policy</a></li>
-                    </ul>
-                </div>
-
-                <div class="col-lg-2 col-6 footer-links ">
-                    <h4>Our Services</h4>
-                    <ul>
-                        <li><a href="# ">Web Design</a></li>
-                        <li><a href="# ">Web Development</a></li>
-                        <li><a href="# ">Product Management</a></li>
-                        <li><a href="# ">Marketing</a></li>
-                        <li><a href="# ">Graphic Design</a></li>
-                    </ul>
-                </div>
-
-                <div class="col-lg-3 col-md-12 footer-contact text-center text-md-start ">
-                    <h4>Contact Us</h4>
-                    <p>
-                        A108 Adam Street <br> New York, NY 535022<br> United States <br><br>
-                        <strong>Phone:</strong> +1 5589 55488 55<br>
-                        <strong>Email:</strong> info@example.com<br>
-                    </p>
-
-                </div>
+               
 
             </div>
         </div>
 
         <div class="container mt-4 ">
             <div class="copyright ">
-                &copy; Copyright <strong><span>Impact</span></strong>. All Rights Reserved
+                &copy; Copyright <strong><span>Psiconsultorio</span></strong>. Todos los Derechos Reservados.
             </div>
             <div class="credits ">
                 <!-- All the links in the footer should remain intact. -->
                 <!-- You can delete the links only if you purchased the pro version. -->
                 <!-- Licensing information: https://bootstrapmade.com/license/ -->
                 <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/impact-bootstrap-business-website-template/ -->
-                Designed by <a href="https://bootstrapmade.com/ ">BootstrapMade</a>
+                Designed by Ivan Acosta y Victor Covarrubias</a>
             </div>
         </div>
 
