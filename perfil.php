@@ -167,14 +167,12 @@
                             </ul>
                         </div>
                         <div class="card mt-3 justify-content-center">
-                            <form>
+                            <form action="agregarNota.php?id=<?php echo $control ?>" method="post">
                                 <!-- Message input -->
                                 <div class="form-outline mb-4">
-                                    <textarea class="form-control" id="form4Example3" rows="4"></textarea>
+                                    <textarea class="form-control" name="nota" id="form4Example3" rows="4"></textarea>
                                     <label class="mb-0" for="form4Example3">Anotaciones</label>
                                 </div>
-
-
 
                                 <!-- Submit button -->
                                 <button type="submit" class="btn btn-sm btn-primary w-100 ml-2" style="background-color:#346e63;border:#f4f4f4; ">
@@ -187,7 +185,7 @@
 
                         <div class="card mb-5">
                             <!--  -->
-                            <form action="Add_Cita.php">
+                            <form action="agregarCita.php?id=<?php echo $control ?>" method="post">
                                 <div class="card mb-3">
                                     <div class="card-body">
                                         <div class="row">
@@ -195,7 +193,7 @@
                                                 <h6 class="mb-0">Fecha</h6>
                                             </div>
                                             <div class="col-sm-9 text-secondary">
-                                                <input type="date" class="form-control" placeholder="Fecha" aria-label="Fecha" aria-describedby="basic-addon2">
+                                                <input type="date" name="fechaC" class="form-control" placeholder="Fecha" aria-label="Fecha" aria-describedby="basic-addon2">
                                             </div>
                                         </div>
                                         <hr>
@@ -204,7 +202,7 @@
                                                 <h6 class="mb-0">Hora</h6>
                                             </div>
                                             <div class="col-sm-9 text-secondary">
-                                                <input type="time" class="form-control" placeholder="Hora" aria-label="Hora" aria-describedby="basic-addon2">
+                                                <input type="time" class="form-control" name="horaC" placeholder="Hora" aria-label="Hora" aria-describedby="basic-addon2">
                                             </div>
                                         </div>
                                         <hr>
@@ -213,7 +211,7 @@
                                                 <h6 class="mb-0">Tipo de consulta</h6>
                                             </div>
                                             <div class="col-sm-9 text-secondary">
-                                                <input type="text" class="form-control" placeholder="Tipo de consulta" aria-label="Tipo de consulta" aria-describedby="basic-addon2">
+                                                <input type="text" class="form-control" name="tipoC" placeholder="Tipo de consulta" aria-label="Tipo de consulta" aria-describedby="basic-addon2">
                                             </div>
                                         </div>
                                         <hr>
@@ -222,7 +220,7 @@
                                                 <h6 class="mb-0">Estado del paciente</h6>
                                             </div>
                                             <div class="col-sm-9 text-secondary">
-                                                <input type="text" class="form-control" placeholder="Estado" aria-label="Estado" aria-describedby="basic-addon2">
+                                                <input type="text" class="form-control" name="estado" placeholder="Estado" aria-label="Estado" aria-describedby="basic-addon2">
                                             </div>
                                         </div>
                                         <hr>
@@ -231,7 +229,7 @@
                                                 <h6 class="mb-0">Titulo del diagnostico</h6>
                                             </div>
                                             <div class="col-sm-9 text-secondary">
-                                                <input type="text" class="form-control" placeholder="Titulo del diagnostico" aria-label="Titulo del diagnostico" aria-describedby="basic-addon2">
+                                                <input type="text" class="form-control" name="diagnosticoT" placeholder="Titulo del diagnostico" aria-label="Titulo del diagnostico" aria-describedby="basic-addon2">
                                             </div>
                                         </div>
                                         <hr>
@@ -241,13 +239,13 @@
                                                 <h6 class="mb-0">Informacion del diagnostico</h6>
                                             </div>
                                             <div class="col-sm-9 text-secondary">
-                                                <textarea class="form-control" rows="4" placeholder="Informacion del diagnostico"></textarea>
+                                                <textarea class="form-control" rows="4"  name="diagnosticoI" placeholder="Informacion del diagnostico"></textarea>
                                             </div>
                                         </div>
                                         <hr>
                                         <div class="row">
                                             <div class="col-sm-12">
-                                                <input class="btn btn-sm btn-primary w-100 ml-2 " style="background-color:#346e63;border:#f4f4f4; " target="__blank" value="Listo" type="submit">
+                                                <input class="btn btn-sm btn-primary w-100 ml-2 " style="background-color:#346e63;border:#f4f4f4; "  value="Listo" type="submit">
                                             </div>
                                         </div>
                                     </div>
@@ -267,92 +265,137 @@
 
                 <h2 class=" " style="color:#ffffff ">Historial</h2>
                 <div class="row gutters-sm ">
-                    <div class="col-md-8 ">
-                        <!--  -->
-                        <div class="card p-3 " style="background-color:#ffffff ">
-                            <div class="ml-3 w-70 ">
-                                <h6 class="mb-0 "><b>Consultas</b></h6>
-                                <br>
-                                <div class="card mb-3">
-                                    <div class="card-body">
-                                        <div class="row">
-                                            <div class="col-sm-3">
-                                                <h6 class="mb-0">Fecha</h6>
-                                            </div>
-                                            <div class="col-sm-9 text-secondary">
-                                                <span class="text-secondary">22/10/2022</span>
-                                            </div>
-                                        </div>
-                                        <hr>
-                                        <div class="row">
-                                            <div class="col-sm-3">
-                                                <h6 class="mb-0">Hora</h6>
-                                            </div>
-                                            <div class="col-sm-9 text-secondary">
-                                                <span class="text-secondary">09:30</span>
-                                            </div>
-                                        </div>
-                                        <hr>
-                                        <div class="row">
-                                            <div class="col-sm-3">
-                                                <h6 class="mb-0">Tipo de consulta</h6>
-                                            </div>
-                                            <div class="col-sm-9 text-secondary">
-                                                <span class="text-secondary">Consulta de terapia</span>
-                                            </div>
-                                        </div>
-                                        <hr>
-                                        <div class="row">
-                                            <div class="col-sm-3">
-                                                <h6 class="mb-0">Estado del paciente</h6>
-                                            </div>
-                                            <div class="col-sm-9 text-secondary">
-                                                <span class="text-secondary">Grave</span>
-                                            </div>
-                                        </div>
-                                        <hr>
-                                        <div class="row">
-                                            <div class="col-sm-3">
-                                                <h6 class="mb-0">Titulo del diagnostico</h6>
-                                            </div>
-                                            <div class="col-sm-9 text-secondary">
-                                                <span class="text-secondary">Bipolaridad</span> </div>
-                                        </div>
-                                        <hr>
+                    <div class="col-md-8 ">    <!--  -->
+                        <?php
+                        //Se hace la conexion con la BD
+                        include("conexion.php");
+                        //Validacion de usuario y contraseña
 
-                                        <div class="row">
-                                            <div class="col-sm-3">
-                                                <h6 class="mb-0">Informacion del diagnostico</h6>
+                        $consulta = "SELECT * FROM consulta WHERE noControl='$control'";
+                        $query = mysqli_query($conexion, $consulta);
+                        $resultado = mysqli_num_rows($query);
+                        //Si se encontro el usuario entra al index
+                        if($resultado){ 
+                            $i = 0;
+                            while($data = mysqli_fetch_array($query)){
+                                $i = $i + 1;
+                                $fechaC = date("d/m/Y", strtotime($data['fecha_cita']));
+                                $horaC = $data['hora_cita'];
+                                $estado = $data['estado'];
+                                $tipoC = $data['tipo_consulta'];
+                                $diagnosticoT = $data['diagnostico_titulo'];
+                                $diagnosticoI = $data['diagnostico_info'];
+                            ?>
+                            <div class="card p-3 " style="background-color:#ffffff ">
+                                <div class="ml-3 w-70 ">
+                                    <h6 class="mb-0 "><b>Consultas&nbsp<?php echo $i?></b></h6>
+                                    <br>
+                                    <div class="card mb-3">
+                                        <div class="card-body">
+                                            <div class="row">
+                                                <div class="col-sm-3">
+                                                    <h6 class="mb-0">Fecha</h6>
+                                                </div>
+                                                <div class="col-sm-9 text-secondary">
+                                                    <span class="text-secondary"><?php echo $fechaC?></span>
+                                                </div>
                                             </div>
-                                            <div class="col-sm-9 text-secondary">
-                                                <span class="text-secondary">Problemas y miedo a las arañas </span> </div>
+                                            <hr>
+                                            <div class="row">
+                                                <div class="col-sm-3">
+                                                    <h6 class="mb-0">Hora</h6>
+                                                </div>
+                                                <div class="col-sm-9 text-secondary">
+                                                    <span class="text-secondary"><?php echo $horaC;?></span>
+                                                </div>
+                                            </div>
+                                            <hr>
+                                            <div class="row">
+                                                <div class="col-sm-3">
+                                                    <h6 class="mb-0">Tipo de consulta</h6>
+                                                </div>
+                                                <div class="col-sm-9 text-secondary">
+                                                    <span class="text-secondary"><?php echo $tipoC?></span>
+                                                </div>
+                                            </div>
+                                            <hr>
+                                            <div class="row">
+                                                <div class="col-sm-3">
+                                                    <h6 class="mb-0">Estado del paciente</h6>
+                                                </div>
+                                                <div class="col-sm-9 text-secondary">
+                                                    <span class="text-secondary"><?php echo $estado?></span>
+                                                </div>
+                                            </div>
+                                            <hr>
+                                            <div class="row">
+                                                <div class="col-sm-3">
+                                                    <h6 class="mb-0">Titulo del diagnostico</h6>
+                                                </div>
+                                                <div class="col-sm-9 text-secondary">
+                                                    <span class="text-secondary"><?php echo $diagnosticoT?></span> </div>
+                                            </div>
+                                            <hr>
+
+                                            <div class="row">
+                                                <div class="col-sm-3">
+                                                    <h6 class="mb-0">Informacion del diagnostico</h6>
+                                                </div>
+                                                <div class="col-sm-9 text-secondary">
+                                                    <span class="text-secondary"><?php echo $diagnosticoI?></span> </div>
+                                            </div>
                                         </div>
+
                                     </div>
-
                                 </div>
                             </div>
-
-                        </div>
+                                    <br> 
+                            <?php
+                            }
+                        }
+                    ?> 
                         <br>
 
                         <!--  -->
                     </div>
 
                     <div class="col-md-4 mb-3 ">
+                    <?php
+                        //Se hace la conexion con la BD
+                        include("conexion.php");
+                        //Validacion de usuario y contraseña
 
-                        <!--  -->
-                        <div class="card mt-3 ">
-                            <ul class="list-group list-group-flush ">
-                                <li class="list-group-item d-flex justify-content-between align-items-center flex-wrap ">
-                                    <h6 class="mb-0 ">Anotacion</h6>
-                                    <h5 class="text-secondary ">Fecha</h5>
-                                </li>
-                                <li class="list-group-item d-flex justify-content-between align-items-center flex-wrap ">
-                                    <span class="text-secondary ">Esta malito.</span>
-                                </li>
+                        $consulta = "SELECT * FROM anotaciones WHERE noControl='$control'";
+                        $query = mysqli_query($conexion, $consulta);
+                        $resultado = mysqli_num_rows($query);
+                        //Si se encontro el usuario entra al index
+                        if($resultado){ 
+                            $j = 0;
+                            while($data = mysqli_fetch_array($query)){
+                                $j = $j + 1;
+                                $fechaN = date("d/m/Y", strtotime($data['fechaN']));
+                                $nota = $data['anotacion']; 
+                            ?>
+                             <div class="card mt-3 ">
+                                <ul class="list-group list-group-flush ">
+                                    <li class="list-group-item d-flex justify-content-between align-items-center flex-wrap ">
+                                        <h6 class="mb-0 ">Anotacion&nbsp<?php echo $j?></h6>
+                                        <h5 class="text-secondary ">Fecha&nbsp<?php echo $fechaN?></h5>
+                                    </li>
+                                    <li class="list-group-item d-flex justify-content-between align-items-center flex-wrap ">
+                                        <span class="text-secondary "><?php echo $nota?></span>
+                                    </li>
 
-                            </ul>
-                        </div>
+                                </ul>
+                            </div>
+                            <div>
+                                <p>&nbsp</p>
+                            </div>
+                            <?php
+                            }
+                        }
+                    ?>                 <!--  -->
+        
                         <br>
                         <!--  -->
                     </div>
