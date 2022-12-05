@@ -5,25 +5,24 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Psiconsultorio</title>
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/estilos.css">
+    <link href="../PsicologaTec/images/picono.png" rel="icon">
 </head>
 
 <body>
     <header class="hero">
         <div class="container">
             <nav class="nav">
-                <p class="nav__items nav__items--cta">
-                    <?php echo date("Y-m-d");?>
-                </p>
+              
             
                 
             </nav>
             <section class="hero__container">
                 <div class="hero__texts">
-                    <h1 class="hero__title">Mi Psiconsultorio.</h1>
-                    <h2 class="hero__subtitle">Dueña del programa</h2>
+                    <h1 class="hero__title">Psiconsultorio.</h1>
+                    <h2 class="hero__subtitle">Instituto Tecnologico de Parral</h2>
                     <a href="#formas" class="hero__cta">Inicio</a>
                 </div>
             </section>
@@ -45,12 +44,12 @@
 
                     <form action="logon.php" method="POST">
                         <h2 class="formas__title">Ingresar</h2>
-                        <input class="formas" type="text" minlength="3" name="usuario" placeholder="Usuario"><br>
-                        <input class="formas" type="password" minlength="8" name="pass" placeholder="Contraseña"><br>
+                        <input class="formas" type="text" minlength="3" name="usuario" placeholder="Usuario" required><br>
+                        <input class="formas" type="password" minlength="8" name="pass" placeholder="Contraseña" required><br>
                         <input class="presentation__cta" type="submit" id="sumit" value="Ingresar">
                         <br>
                         <br>
-                        <h2 class="formas__title"><a href="signup.php"> ¿No estas registrado?<br> Haz Click</a></h2>
+                        <!-- <h2 class="formas__title"><a href="signup.php"> ¿No estas registrado?<br> Haz Click</a></h2> -->
                     </form>
                 </article>
             </div>
@@ -79,10 +78,10 @@
 
                         <a class=" fab fa-brands fa-facebook footer__icon" href="https://www.facebook.com/ITParraloficial "></a>
                          </span>
-                    <span class="footer__container-icons">
+                    <!-- <span class="footer__container-icons">
 
                         <a class=" fa-solid fa-user-doctor footer__icon" href=#></a>
-                             </span>
+                             </span> -->
                 </div>
             </section>
 

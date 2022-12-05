@@ -5,12 +5,12 @@
     <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-    <title>Impact Bootstrap Template - Blog</title>
+    <title>Psiconsultorio</title>
     <meta content="" name="description">
     <meta content="" name="keywords">
 
     <!-- Favicons -->
-    <link href="assets/img/favicon.png" rel="icon">
+    <link href="../PsicologaTec/images/picono.png" rel="icon">
     <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
     <!-- Google Fonts -->
@@ -60,7 +60,7 @@
                     <li><a href="pacientes.php">Pacientes</a></li>
                     <li><a href="Add_Paciente.php">Agregar paciente</a></li>
                     <li><a href="Add_Cita.php">Agendar cita</a></li>
-                    <li><a href="#contact">Cerrar Sesion</a></li>
+                    <li><a href="logoff.php">Cerrar Sesion</a></li>
                 </ul>
             </nav>
             <!-- .navbar -->
@@ -87,7 +87,7 @@
                                     <h6 class="mb-0">Numero de control</h6>
                                 </div>
                                 <div class="col-sm-9 text-secondary">
-                                    <input type="text" class="form-control" name="control" placeholder="Numero de control" aria-label="Numero de control" aria-describedby="basic-addon2">
+                                    <input type="text" class="form-control" name="control" placeholder="Numero de control" aria-label="Numero de control" aria-describedby="basic-addon2" maxlength="8" required>
                                 </div>
                             </div>
                             <hr>
@@ -96,7 +96,7 @@
                                     <h6 class="mb-0">Fecha</h6>
                                 </div>
                                 <div class="col-sm-9 text-secondary">
-                                    <input type="date" class="form-control" name="fechaC" placeholder="Fecha" aria-label="Fecha" aria-describedby="basic-addon2">
+                                    <input type="date" class="form-control" name="fechaC" placeholder="Fecha" aria-label="Fecha" aria-describedby="basic-addon2" required>
                                 </div>
                             </div>
                             <hr>
@@ -105,7 +105,7 @@
                                     <h6 class="mb-0">Hora</h6>
                                 </div>
                                 <div class="col-sm-9 text-secondary">
-                                    <input type="time" class="form-control" name="horaC" placeholder="Hora" aria-label="Hora" aria-describedby="basic-addon2">
+                                    <input type="time" class="form-control" name="horaC" placeholder="Hora" aria-label="Hora" aria-describedby="basic-addon2" required>
                                 </div>
                             </div>
                             <hr>
@@ -114,7 +114,7 @@
                                     <h6 class="mb-0">Tipo de cita</h6>
                                 </div>
                                 <div class="col-sm-9 text-secondary">
-                                    <input type="text" class="form-control" name="tipoC" placeholder="Tipo de cita" aria-label="Tipo de cita" aria-describedby="basic-addon2">
+                                    <input type="text" class="form-control" name="tipoC" placeholder="Tipo de cita" aria-label="Tipo de cita" aria-describedby="basic-addon2" required>
                                 </div>
                             </div>
 

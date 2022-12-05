@@ -25,7 +25,8 @@ $resultado = mysqli_num_rows($query);
 </style>
 
     <table cellspacing="0">
-    <img src="../PsicologaTec/logo.png" alt="" style="height:75px ;width:200px">
+    <img src="../PsicologaTec/images/logo.png" alt="" style="height:75px ;width:200px">
+    <br><br>
             <thead>
                 <tr  style="background-color:#18bc9c;"><th colspan="3" >Pacientes </th>
                 </tr>

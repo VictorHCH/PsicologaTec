@@ -1,8 +1,8 @@
 @import url('https://fonts.googleapis.com/css?family=Gill+Sans+MT&display=swap');
 :root {
-    --background: linear-gradient(135deg, #72b6ff7e 0%, #0011a998 100%);
-    --color-primary: #0044aa;
-    --color-secondary: #00085e;
+    --background: linear-gradient(135deg, #18bc9c7e 0%, #346e6398 100%);
+    --color-primary: #18bc9c;
+    --color-secondary: #346e63;
     --boton-padding: 30px 50px;
 }
 
@@ -41,7 +41,7 @@ body {
 
 .formas__item {
     margin: 0 auto;
-    background: #00608d98;
+    background: #18bc9c98;
     box-shadow: 0 8px 10px rgba(66, 66, 66, .5);
     border-radius: 50px;
     padding: 50px 50px;

@@ -14,4 +14,4 @@ $pdf->loadHtml(utf8_decode($html));
 $pdf->setPaper("A4","landingpage");
 
 $pdf->render();
-$pdf->stream('Pacientes.pdf');?>
+$pdf->stream('Archivo_Pacientes.pdf');?>

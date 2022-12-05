@@ -5,12 +5,12 @@
     <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-    <title>Impact Bootstrap Template - Blog</title>
+    <title>Psiconsultorio</title>
     <meta content="" name="description">
     <meta content="" name="keywords">
 
     <!-- Favicons -->
-    <link href="assets/img/favicon.png" rel="icon">
+    <link href="../PsicologaTec/images/picono.png" rel="icon">
     <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
     <!-- Google Fonts -->
@@ -60,7 +60,7 @@
                     <li><a href="pacientes.php">Pacientes</a></li>
                     <li><a href="Add_Paciente.php">Agregar paciente</a></li>
                     <li><a href="Add_Cita.php">Agendar cita</a></li>
-                    <li><a href="#contact">Cerrar Sesion</a></li>
+                    <li><a href="logoff.php">Cerrar Sesion</a></li>
                 </ul>
             </nav>
             <!-- .navbar -->
@@ -85,7 +85,7 @@
                                     <h6 class="mb-0">Numero de control</h6>
                                 </div>
                                 <div class="col-sm-9 text-secondary">
-                                    <input type="text" class="form-control" name="control" placeholder="Numero de control" aria-label="Numero de control" aria-describedby="basic-addon2">
+                                    <input type="text" class="form-control" name="control" placeholder="Numero de control" aria-label="Numero de control" aria-describedby="basic-addon2" maxlength="8" required>
                                 </div>
                             </div>
                             <hr>
@@ -94,7 +94,7 @@
                                     <h6 class="mb-0">Fecha de Ingreso</h6>
                                 </div>
                                 <div class="col-sm-9 text-secondary">
-                                    <input type="date" class="form-control" name="fecha" placeholder="Fecha" aria-label="Fecha" aria-describedby="basic-addon2">
+                                    <input type="date" class="form-control" name="fecha" placeholder="Fecha" aria-label="Fecha" aria-describedby="basic-addon2" required>
                                 </div>
                             </div>
                             <hr>
@@ -103,7 +103,7 @@
                                     <h6 class="mb-0">Nombre(s)</h6>
                                 </div>
                                 <div class="col-sm-9 text-secondary">
-                                    <input type="text" class="form-control" name="nombre" placeholder="Nombre(s)" aria-label="Nombre(s)" aria-describedby="basic-addon2">
+                                    <input type="text" class="form-control" name="nombre" placeholder="Nombre(s)" aria-label="Nombre(s)" aria-describedby="basic-addon2" required>
                                 </div>
                             </div>
                             <hr>
@@ -112,7 +112,7 @@
                                     <h6 class="mb-0">Apellidos</h6>
                                 </div>
                                 <div class="col-sm-9 text-secondary">
-                                    <input type="text" class="form-control" name="apellido" placeholder="Apellidos" aria-label="Apellidos" aria-describedby="basic-addon2">
+                                    <input type="text" class="form-control" name="apellido" placeholder="Apellidos" aria-label="Apellidos" aria-describedby="basic-addon2" required>
                                 </div>
                             </div>
                             <hr>
@@ -121,7 +121,7 @@
                                     <h6 class="mb-0">CURP</h6>
                                 </div>
                                 <div class="col-sm-9 text-secondary">
-                                    <input type="text" class="form-control" name="curp" placeholder="CURP" aria-label="CURP" aria-describedby="basic-addon2" maxlength="18">
+                                    <input type="text" class="form-control" name="curp" placeholder="CURP" aria-label="CURP" aria-describedby="basic-addon2" maxlength="18" required>
                                 </div>
                             </div>
                             <hr>
@@ -130,7 +130,7 @@
                                     <h6 class="mb-0">Peso</h6>
                                 </div>
                                 <div class="col-sm-9 text-secondary">
-                                    <input type="number" class="form-control" name="peso" placeholder="Peso" aria-label="Peso" aria-describedby="basic-addon2" maxlength="18">
+                                    <input type="number" class="form-control" name="peso" placeholder="Peso" aria-label="Peso" aria-describedby="basic-addon2"  required>
                                 </div>
                             </div>
                             <hr>
@@ -139,7 +139,7 @@
                                     <h6 class="mb-0">Estatura</h6>
                                 </div>
                                 <div class="col-sm-9 text-secondary">
-                                    <input type="number" class="form-control" name="estatura" placeholder="Estatura" aria-label="Estatura   " aria-describedby="basic-addon2" maxlength="18">
+                                    <input type="number" class="form-control" name="estatura" placeholder="Estatura" aria-label="Estatura   " aria-describedby="basic-addon2" maxlength="18" required>
                                 </div>
                             </div>
                             <hr>
@@ -188,7 +188,7 @@
                                     <h6 class="mb-0 ">Edad</h6>
                                 </div>
                                 <div class="col-sm-9 text-secondary ">
-                                    <input type="number " class="form-control " name="edad" placeholder="Edad " aria-label="Edad " aria-describedby="basic-addon2 " maxlength="18 ">
+                                    <input type="number " class="form-control " name="edad" placeholder="Edad " aria-label="Edad " aria-describedby="basic-addon2 " maxlength="2 " required>
                                 </div>
                             </div>
                             <hr>

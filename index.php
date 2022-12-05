@@ -6,12 +6,12 @@
     <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-    <title>Impact Bootstrap Template - Index</title>
+    <title>Psiconsultorio</title>
     <meta content="" name="description">
     <meta content="" name="keywords">
 
     <!-- Favicons -->
-    <link href="assets/img/favicon.png" rel="icon">
+    <link href="../PsicologaTec/images/picono.png" rel="icon">
     <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
     <!-- Google Fonts -->
@@ -96,7 +96,7 @@
 
                     <div class="col-xl-3 col-md-6" data-aos="fade-up" data-aos-delay="100">
                         <div class="icon-box">
-                            <div class="icon"><i class="bi bi-easel"></i></div>
+                            <div class="icon"><i class="bi bi-book"></i></div>
                             <h4 class="title"><a href="index.php" class="stretched-link">Citas pendientes</a></h4>
                         </div>
                     </div>
@@ -104,7 +104,7 @@
 
                     <div class="col-xl-3 col-md-6" data-aos="fade-up" data-aos-delay="200">
                         <div class="icon-box">
-                            <div class="icon"><i class="bi bi-gem"></i></div>
+                            <div class="icon"><i class="bi bi-file-earmark-person"></i></div>
                             <h4 class="title"><a href="pacientes.php" class="stretched-link">Pacientes</a></h4>
                         </div>
                     </div>
@@ -112,7 +112,7 @@
 
                     <div class="col-xl-3 col-md-6" data-aos="fade-up" data-aos-delay="300">
                         <div class="icon-box">
-                            <div class="icon"><i class="bi bi-geo-alt"></i></div>
+                            <div class="icon"><i class="bi bi-journal-plus"></i></div>
                             <h4 class="title"><a href="Add_Cita.php" class="stretched-link">Agregar Citas</a></h4>
                         </div>
                     </div>
@@ -120,7 +120,7 @@
 
                     <div class="col-xl-3 col-md-6" data-aos="fade-up" data-aos-delay="500">
                         <div class="icon-box">
-                            <div class="icon"><i class="bi bi-command"></i></div>
+                            <div class="icon"><i class="bi bi-journal-bookmark-fill"></i></div>
                             <h4 class="title">
                                 <a href="Add_Paciente.php" class="stretched-link">Agregar pacientes</a>
                             </h4>
