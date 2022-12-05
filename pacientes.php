@@ -56,7 +56,7 @@
             </a>
             <nav id="navbar" class="navbar">
                 <ul>
-                    <li><a href="pacientes.php">Generar reporte</a></li>
+                    <li><a href="pdf.php">Generar reporte</a></li>
                     <li><a href="index.php">Citas pendientes</a></li>
 
                     <li><a href="pacientes.php">Pacientes</a></li>
