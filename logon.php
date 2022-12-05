@@ -9,7 +9,6 @@
     //Se hace la conexion con la BD
     include("conexion.php");
     //Validacion de usuario y contraseña
-
     $consulta = "SELECT * FROM usuario WHERE (nombre_usuario='$nombre') AND pass='$pass'";
     $query = mysqli_query($conexion, $consulta);
     $resultado = mysqli_num_rows($query);
