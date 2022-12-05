@@ -141,25 +141,47 @@
 
         <div class="container ">
             <!--  -->
-            <div class="card p-3 " style="background-color:#18bc9c ">
-                <div class="ml-3 w-70 ">
-                    <h4 class="mb-0 mt-0 " style="color:#ffffff ">Tipo de Cita</h4> <span style="color:#ffffff ">Medica</span>
-                    <div class="p-2 mt-2 d-flex justify-content-between rounded text-white stats " style="background-color:#ffffff ">
-                        <div class="d-flex flex-column " style="color:#000000 "> <span class="articles "><b>Paciente:</b></span> <span class="number1 ">Kenneth</span> <span class="number1 ">Aguirre</span> </div>
-                        <div class="d-flex flex-column " style="color:#000000 "> <span class="rating "><b>Fecha:</b></span> <span class="number3 ">25/11/2022</span> </div>
-                        <div class="d-flex flex-column " style="color:#000000 "> <span class="followers "><b>Hora:</b></span> <span class="number2 ">9:30</span> </div>
-                        <div class="d-flex flex-column " style="color:#000000 "> <span class="rating "><b>Numero de control:</b></span> <span class="number3 ">19410251</span> </div>
-                    </div>
-                    <form action="perfil.php">
-                        <div class="button mt-2 d-flex flex-row align-items-center ">
-                            <button class="btn btn-sm btn-primary w-100 ml-2 " style="background-color:#116554;border:#f4f4f4; " type="submit">Entrar</button>
-                            <!-- En este boton quien que al picarle entre a al perfil de la persona correspondiente , similar que al boron de paciente -->
+            <?php
+                        //Se hace la conexion con la BD
+                        include("conexion.php");
+                        //Validacion de usuario y contraseña
+                        $fecha = date("Y")."/".date("m")."/".date("d")-1;
+                        $consulta = "SELECT p.nombres, p.apellidos, p.noControl, c.hora, c.tipoCita, c.fecha FROM pacientes as p 
+                        INNER JOIN citas as c ON c.noControl = p.noControl WHERE fecha = '$fecha'";
+                        $query = mysqli_query($conexion, $consulta);
+                        $resultado = mysqli_num_rows($query);
+                        //Si se encontro el usuario entra al index
+                        if($resultado){ 
+                            while($data = mysqli_fetch_array($query)){
+                                $nombre = $data['nombres'];
+                                $apellido = $data['apellidos'];
+                                $control= $data['noControl'];
+                                $tipoCita = $data['tipoCita'];
+                                $hora = $data['hora'];
+                            ?>
+                            <div class="card p-3 " style="background-color:#18bc9c ">
+                                <div class="ml-3 w-70 ">
+                                    <h4 class="mb-0 mt-0 " style="color:#ffffff ">Tipo de Cita</h4> <span style="color:#ffffff "><?php echo $tipoCita?></span>
+                                    <div class="p-2 mt-2 d-flex justify-content-between rounded text-white stats " style="background-color:#ffffff ">
+                                        <div class="d-flex flex-column " style="color:#000000 "> <span class="articles "><b>Paciente:</b></span> <span class="number1 "><?php echo $nombre?></span><span class="number1 "><?php echo $apellido?></span> </div>
+                                        <div class="d-flex flex-column " style="color:#000000 "> <span class="rating "><b>Fecha:</b></span> <span class="number3 "><?php echo (date("d")-1)."/".date("m")."/".date("Y")?></span> </div>
+                                        <div class="d-flex flex-column " style="color:#000000 "> <span class="followers "><b>Hora:</b></span> <span class="number2 "><?php echo $hora?></span> </div>
+                                        <div class="d-flex flex-column " style="color:#000000 "> <span class="rating "><b>Numero de control:</b></span> <span class="number3 "><?php echo $control?></span> </div>
+                                    </div>
+                                    <a href="perfil.php?id=<?php echo $control?>">
+                                        <div class="button mt-2 d-flex flex-row align-items-center ">
+                                            <button class="btn btn-sm btn-primary w-100 ml-2 " style="background-color:#116554;border:#f4f4f4; " type="submit">Entrar</button>
+                                            <!-- En este boton quien que al picarle entre a al perfil de la persona correspondiente , similar que al boron de paciente -->
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <br>
+                            <?php
+                            }
+                        }
+                    ?>    
 
-                        </div>
-                    </form>
-                </div>
-            </div>
-            <br>
             <!--  -->
         </div>
         <div class="container ">

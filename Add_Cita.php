@@ -78,7 +78,7 @@
         <div class="container align-items-center ">
             <br>
             <div class="col-md-20">
-                <form action="Add_Cita.php">
+                <form action="agregarConsulta.php" method="post">
                     <div class="card mb-3">
                         <div class="card-body">
 
@@ -87,7 +87,7 @@
                                     <h6 class="mb-0">Numero de control</h6>
                                 </div>
                                 <div class="col-sm-9 text-secondary">
-                                    <input type="text" class="form-control" placeholder="Numero de control" aria-label="Numero de control" aria-describedby="basic-addon2">
+                                    <input type="text" class="form-control" name="control" placeholder="Numero de control" aria-label="Numero de control" aria-describedby="basic-addon2">
                                 </div>
                             </div>
                             <hr>
@@ -96,7 +96,7 @@
                                     <h6 class="mb-0">Fecha</h6>
                                 </div>
                                 <div class="col-sm-9 text-secondary">
-                                    <input type="date" class="form-control" placeholder="Fecha" aria-label="Fecha" aria-describedby="basic-addon2">
+                                    <input type="date" class="form-control" name="fechaC" placeholder="Fecha" aria-label="Fecha" aria-describedby="basic-addon2">
                                 </div>
                             </div>
                             <hr>
@@ -105,7 +105,7 @@
                                     <h6 class="mb-0">Hora</h6>
                                 </div>
                                 <div class="col-sm-9 text-secondary">
-                                    <input type="time" class="form-control" placeholder="Hora" aria-label="Hora" aria-describedby="basic-addon2">
+                                    <input type="time" class="form-control" name="horaC" placeholder="Hora" aria-label="Hora" aria-describedby="basic-addon2">
                                 </div>
                             </div>
                             <hr>
@@ -114,7 +114,7 @@
                                     <h6 class="mb-0">Tipo de cita</h6>
                                 </div>
                                 <div class="col-sm-9 text-secondary">
-                                    <input type="text" class="form-control" placeholder="Tipo de cita" aria-label="Tipo de cita" aria-describedby="basic-addon2">
+                                    <input type="text" class="form-control" name="tipoC" placeholder="Tipo de cita" aria-label="Tipo de cita" aria-describedby="basic-addon2">
                                 </div>
                             </div>
 
