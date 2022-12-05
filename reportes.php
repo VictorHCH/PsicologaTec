@@ -1,9 +1,6 @@
 <?php
 
-$db_host='localhost:3307';
-$db_user='root';
-$db_pass='';
-$db_database='piscotec';
+
 
 include("conexion.php");
 
@@ -28,11 +25,11 @@ $resultado = mysqli_num_rows($query);
 </style>
 
     <table cellspacing="0">
-        
+    <img src="../PsicologaTec/logo.png" alt="" style="height:75px ;width:200px">
             <thead>
-                <tr><th colspan="3" >Pacientes</th>
+                <tr  style="background-color:#18bc9c;"><th colspan="3" >Pacientes </th>
                 </tr>
-            <tr><th>Nombre Completo</th>
+            <tr style="background-color: #c9c7c7;"><th>Nombre Completo</th>
                 <th>Numero de control</th>
                 <th>Edad</th>
                
